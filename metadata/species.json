@@ -1,0 +1,162 @@
+{
+    "AtlanticSpottedDolphin": {
+        "common_name": "Atlantic Spotted Dolphin",
+        "scientific_name": "Stenella frontalis",
+        "code": "BD15F"
+    },
+    "BeardedSeal": {
+        "common_name": "Bearded Seal",
+        "scientific_name": "Erignathus barbatus",
+        "code": "CC2A"
+    },
+    "Beluga_WhiteWhale": {
+        "common_name": "Beluga, White Whale",
+        "scientific_name": "Delphinapterus leucas",
+        "code": "BB1A"
+    },
+    "BottlenoseDolphin": {
+        "common_name": "Bottlenose Dolphin",
+        "scientific_name": "Tursiops truncatus",
+        "code": "BD19D"
+    },
+    "BowheadWhale": {
+        "common_name": "Bowhead Whale",
+        "scientific_name": "Balaena mysticetus",
+        "code": "AA1A"
+    },
+    "ClymeneDolphin": {
+        "common_name": "Clymene Dolphin",
+        "scientific_name": "Stenella clymene",
+        "code": "BD15B"
+    },
+    "CommonDolphin": {
+        "common_name": "Common Dolphin",
+        "scientific_name": "Delphinus delphis",
+        "code": "BD3B"
+    },
+    "FalseKillerWhale": {
+        "common_name": "False Killer Whale",
+        "scientific_name": "Pseudorca crassidens",
+        "code": "BE9A"
+    },
+    "Fin_FinbackWhale": {
+        "common_name": "Fin, Finback Whale",
+        "scientific_name": "Balaenoptera physalus",
+        "code": "AC1F"
+    },
+    "Fraser'sDolphin": {
+        "common_name": "Fraser's Dolphin",
+        "scientific_name": "Lagenodelphis hosei",
+        "code": "BD5A"
+    },
+    "Grampus_Risso'sDolphin": {
+        "common_name": "Grampus, Risso's Dolphin",
+        "scientific_name": "Grampus griseus",
+        "code": "BD4A"
+    },
+    "HarpSeal": {
+        "common_name": "Harp Seal",
+        "scientific_name": "Pagophilus groenlandicus",
+        "code": "CC12G"
+    },
+    "HumpbackWhale": {
+        "common_name": "Humpback Whale",
+        "scientific_name": "Megaptera novaeangliae",
+        "code": "AC2A"
+    },
+    "KillerWhale": {
+        "common_name": "Killer Whale",
+        "scientific_name": "Orcinus orca",
+        "code": "BE7A"
+    },
+    "LeopardSeal": {
+        "common_name": "Leopard Seal",
+        "scientific_name": "Hydrurga leptonyx",
+        "code": "CC4A"
+    },
+    "Long_FinnedPilotWhale": {
+        "common_name": "Long-Finned Pilot Whale",
+        "scientific_name": "Globicephala malaena",
+        "code": "BE3C"
+    },
+    "MelonHeadedWhale": {
+        "common_name": "Melon Headed Whale",
+        "scientific_name": "Peponocephala electra",
+        "code": "BD10A"
+    },
+    "MinkeWhale": {
+        "common_name": "Minke Whale",
+        "scientific_name": "Balaenoptera acutorostrata",
+        "code": "AC1A"
+    },
+    "Narwhal": {
+        "common_name": "Narwhal",
+        "scientific_name": "Monodon monoceros",
+        "code": "BB2A"
+    },
+    "NorthernRightWhale": {
+        "common_name": "Northern Right Whale",
+        "scientific_name": "Eubalaena glacialis",
+        "code": "AA3A"
+    },
+    "PantropicalSpottedDolphin": {
+        "common_name": "Pantropical Spotted Dolphin",
+        "scientific_name": "Stenella attenuata",
+        "code": "BD15A"
+    },
+    "RossSeal": {
+        "common_name": "Ross Seal",
+        "scientific_name": "Ommatophoca rossi",
+        "code": "CC14A"
+    },
+    "Rough_ToothedDolphin": {
+        "common_name": "Rough-Toothed Dolphin",
+        "scientific_name": "Steno bredanensis",
+        "code": "BD17A"
+    },
+    "Short_Finned(Pacific)PilotWhale": {
+        "common_name": "Short-Finned (Pacific) Pilot Whale",
+        "scientific_name": "Globicephala macrorhynchus",
+        "code": "BE3D"
+    },
+    "SouthernRightWhale": {
+        "common_name": "Southern Right Whale",
+        "scientific_name": "Eubalaena australis",
+        "code": "AA3B"
+    },
+    "SpermWhale": {
+        "common_name": "Sperm Whale",
+        "scientific_name": "Physeter macrocephalus",
+        "code": "BA2A"
+    },
+    "SpinnerDolphin": {
+        "common_name": "Spinner Dolphin",
+        "scientific_name": "Stenella longirostris",
+        "code": "BD15L"
+    },
+    "StripedDolphin": {
+        "common_name": "Striped Dolphin",
+        "scientific_name": "Stenella coeruleoalba",
+        "code": "BD15C"
+    },
+    "Walrus": {
+        "common_name": "Walrus",
+        "scientific_name": "Odobenus rosmarus",
+        "code": "CB1A"
+    },
+    "WeddellSeal": {
+        "common_name": "Weddell Seal",
+        "scientific_name": "Leptonychotes weddellii",
+        "code": "CC5A"
+    },
+    "White_beakedDolphin": {
+        "common_name": "White-beaked Dolphin",
+        "scientific_name": "Lagenorhynchus albirostris",
+        "code": "BD6B"
+    },
+    "White_sidedDolphin": {
+        "common_name": "White-sided Dolphin",
+        "scientific_name": "Lagenorhynchus acutus",
+        "code": "BD6A"
+    }
+}

@@ -1,0 +1,5 @@
+# ignore .wav files
+*.wav
+
+# ignore data folder because of its size
+data/

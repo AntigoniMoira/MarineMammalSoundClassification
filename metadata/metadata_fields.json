@@ -1,0 +1,250 @@
+{
+    "RN": {
+        "name": "RECNO",
+        "index": "T",
+        "sort": "3",
+        "emphasis": "1",
+        "desc": "Retrieval number of record year/tape#/cut#)",
+        "desc_long": " Retrieval numer of record (Year/tape#/cut#) Year (2 digits), tape no. (3 digits), cut # (3 digits, alphanumeric base 36). Example: 850430B6"
+    },
+    "CU": {
+        "name": "CUE",
+        "index": "T",
+        "sort": "3",
+        "emphasis": "1",
+        "desc": "Cue or time on tape, buffer (B) size, sec in buffer",
+        "desc_long": "ue Or time (min:sec) on tape at signal end, (B) analyzer buffer size (min:sec), decimal time sec from start of Kay buffer to cursor at beginning of sound. Example: 542 B2:8 8.130 or 1:03:12 B2:8 8.130"
+    },
+    "NC": {
+        "name": "NOCHA",
+        "index": "T",
+        "sort": "3",
+        "emphasis": "1",
+        "desc": "Number channels recorded, digitized, chan/side ID",
+        "desc_long": "Number of channels recorded (1st digit), numer of channels multiplexed (2nd digit), channel ID letter (s) side one A &B, side two C & D~ Example: 42CD"
+    },
+    "SR": {
+        "name": "SAMTE",
+        "index": "T",
+        "sort": "1",
+        "emphasis": "1",
+        "desc": "Sample rate (convert Kay input freq. to sample rate)",
+        "desc_long": "Sample rate (Kay input frequency converted)."
+    },
+    "CS": {
+        "name": "CUTSIZE",
+        "index": "T",
+        "sort": "1",
+        "emphasis": "1",
+        "desc": "Cut size -- digital cut in sec (2 or 3 dec. places)",
+        "desc_long": "Cut size sec (2 or 3 decimal places)."
+    },
+    "PL": {
+        "name": "PLAYBAK",
+        "index": "Y",
+        "sort": "7",
+        "emphasis": "1",
+        "desc": "Playback equip., filter setting low (L) high (H) kHz",
+        "desc_long": "Playback recorder If il ter type, settings in kEz (pass-band), L = low (HP) and H = high (for LP). Example: PEMTEK/KROHN-HITE LO. 1 H12"
+    },
+    "SC": {
+        "name": "SIGCLAS",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Signal class - Signature, Mimic..., qual 1-5, Overlap",
+        "desc_long": "ignal class, letter codes (Signature, Mimic, Variant, Deletion, Uncharacteristic, Calf, etc. ), quality 1 to 5 (best), 0 = overlap in Time or Frequency. N = no overlap. Example: S 4 OTF"
+    },
+    "ID": {
+        "name": "IDENT",
+        "index": "Y",
+        "sort": "7",
+        "emphasis": "1",
+        "desc": "ID of individual vocalizing, species code",
+        "desc_long": "dentification of vocal animal, species code."
+    },
+    "AG": {
+        "name": "AGE",
+        "index": "Y",
+        "sort": "7",
+        "emphasis": "i",
+        "desc": "Age, sex (M/F) pref ix, birth year, ID, spec,ies code",
+        "desc_long": "Age with sex (M or F) prefix (decimal for part year) and ID, birth year of vocalizing animal with sex prefix and ID, species code. Example: MO. 3FB19 M1985FB19 BD19D"
+    },
+    "IA": {
+        "name": "INTERAC",
+        "index": "Y",
+        "sort": "7",
+        "emphasis": "1",
+        "desc": "Interaction (MC = male-calf, etc.), ID",
+        "desc_long": "Interaction, male-male (MM)/ female-calf (FC), etc., with ID's. Example: FCFBI0 FCFB19"
+    },
+    "GS": {
+        "name": "GENSP",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Genus/Species animals producing sounds, species code",
+        "desc_long": "Genus and species of vocalizing animal. Scientif ic names and species code."
+    },
+    "GA": {
+        "name": "GEOA",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Geographic location A = ASFIS code, species code",
+        "desc_long": "Geographic location area code from ASFIS map, species code. Example: ANABIA (AN area, ABIA species)"
+    },
+    "OD": {
+        "name": "OBSDATE",
+        "index": "Y",
+        "sort": "4",
+        "emphasis": "1",
+        "desc": "Observation date of original recording, species code",
+        "desc_long": "Observation date for original, species code. Example: 20-Dec-1960 ABIA /2 Subfield for month and year, species code. Example: DecABIA 1960ABIA"
+    },
+    "NT": {
+        "name": "NOTE",
+        "index": "N",
+        "sort": "",
+        "emphasis": "",
+        "desc": "Note =. Species code, observation or recording details",
+        "desc_long": "Species code, comments, recording details. ID of animals in parentheses. Not indexed."
+    },
+    "DA": {
+        "name": "DATE",
+        "index": "T",
+        "sort": "4",
+        "emphasis": "1",
+        "desc": "Pate of this record entry (latest modification)",
+        "desc_long": "Date of this record entry, last modification.(Use F6 key) Example: 24-May-1991"
+    },
+    "IP": {
+        "name": "IDPRES",
+        "index": "Y",
+        "sort": "7",
+        "emphasis": "1",
+        "desc": "Identif ication conspecif ics present, species code",
+        "desc_long": "ID of conspecif ics present, species code. Separate subfields for each 'animal."
+    },
+    "AP": {
+        "name": "AGEPRES",
+        "index": "Y",
+        "sort": "7",
+        "emphasis": "1",
+        "desc": "Age consp. present: sex-pref., birth yr., ID, sp. code",
+        "desc_long": "Age of conspecif ics present = sex pref ix (M/F ) wi th age (decimal for part year) and ID, birth year with sex prefix and ID, species code. Separate subfields each animal. Example: MO. 3FB19 M1985FB19 BD19D"
+    },
+    "BH": {
+        "name": "BEHAV",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Behavior of the animals, species code",
+        "desc_long": "Behavior codes, species code."
+    },
+    "OS": {
+        "name": "OTHERSP",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Other species present, species codes ",
+        "desc_long": "Other species present, species codes. Separate subfields for each species."
+    },
+    "NA": {
+        "name": "NOANIM",
+        "index": "T",
+        "sort": "3",
+        "emphasis": "1",
+        "desc": "Numer of animals vocalizing, species code",
+        "desc_long": "Number of animals vocalizing, species codes."
+    },
+    "GB": {
+        "name": "GEOB",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Geographic location B = name of area, species code --/2 Location of birth/capture area, species code, (ID)",
+        "desc_long": "Geographic location area name, species code. /2 Location of birth/capture, species code, ID of animal (in parentheses)."
+    },
+    "GC": {
+        "name": "GEOC",
+        "index": "Y",
+        "sort": "7",
+        "emphasis": "1",
+        "desc": "Geographic location C = lat. & ~ong., species code",
+        "desc_long": "Geographic location latitude and longitude,'N' or 'S' and two digits for lat., 'E' or'W' and three digits for long. Each with species code. Example: N70ABlA E020ABIA"
+    },
+    "OT": {
+        "name": "OBSTIME",
+        "index": "Y",
+        "sort": "7",
+        "emphasis": "1",
+        "desc": "Observation time of original recording, species code",
+        "desc_long": "Observation time for original, species code. Example: 1430 ABIA"
+    },
+    "SH": {
+        "name": "SHIP",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Ship/cruise, aquarium, or recording platform",
+        "desc_long": "Ship/cruise, aquarium, or other platform,(SMall boat, AQuarium, BEach, ICe, UNknown)"
+    },
+    "AU": {
+        "name": "AUTHOR",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Author, originator of the recording",
+        "desc_long": "Author, originator of the recording."
+    },
+    "LO": {
+        "name": "LOCATE",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Location of original recording",
+        "desc_long": "Location of original recording."
+    },
+    "HY": {
+        "name": "HYDEPTH",
+        "index": "T",
+        "sort": "3",
+        "emphasis": "1",
+        "desc": "Hydrophone depth in m",
+        "desc_long": " Hydrophone depth in m."
+    },
+    "RC": {
+        "name": "RCOND",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Recording conditions, weather, salinity, etc.",
+        "desc_long": "Conditions, weather, salinity. Not indexed."
+    },
+    "RG": {
+        "name": "RGEAR",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Recording gear, equipment",
+        "desc_long": "Recording gear, equipment. Not indexed."
+    },
+    "SL": {
+        "name": "SIGLEVL",
+        "index": "Y",
+        "sort": "7",
+        "emphasis": "1",
+        "desc": "Signal ievel ( dB received or source), species code",
+        "desc_long": "Signal level Received,Source, ( dB), species code. E = estimated.  Example: S172ABIA E"
+    },
+    "ST": {
+        "name": "SIGTYPE",
+        "index": "Y",
+        "sort": "5",
+        "emphasis": "1",
+        "desc": "Signal type codes, species code --/2 Signal type names (coda, slow clicks), species code",
+        "desc_long": "Signal type, Long= > 0.1 sec; Short= < O. 1 sec | BL Broadband long, noisy, many frequencies | BS Broadband short, clicks, pulses | NL Narrowband long, tonal, few harmonics | NS Narrowband short, bell, short tones | FM Frequency modulated, sweeps, 'contours' | CH Chirp, short FM sweep | PU Pulsed, click bursts, sidebands | SE Series, train, sequence of sounds | SO Song, long, repetitive, patterned -- with species code. Example: NLABIA /2 ignal type, general: coda, slow clicks, etc. -- with species code."
+    }
+}
