@@ -3,3 +3,6 @@
 
 # ignore data folder because of its size
 data/
+
+# ignore data_split folder because of its size
+data_split/
