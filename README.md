@@ -22,7 +22,7 @@ The implementation plan consists of the following steps:
 2. Exploratory data analysis [`EDA-v1.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/EDA-v1.ipynb)
 3. Data Preprocessing (Cleaning and Splitting) [`data_preprocessing.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/data_preprocessing.ipynb)
 4. Handcrafted Features and SVM as baseline for comparison [`baseline_svm.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/baseline_svm.ipynb)
-5. Handcrafted Features and Fully Connected Neural Network ['FullyConnected_NN.ipynb'](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/FullyConnected_NN.ipynb)
+5. Handcrafted Features and Fully Connected Neural Network [`FullyConnected_NN.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/FullyConnected_NN.ipynb)
 6. Melgrams/Spectrograms and CNNs
 7. RNNs/LSTMs
 8. Audio Transformer
