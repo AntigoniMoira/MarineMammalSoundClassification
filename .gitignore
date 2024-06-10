@@ -6,3 +6,6 @@ data/
 
 # ignore data_split folder because of its size
 data_split/
+
+# ignore spectrograms folder because of its size
+spectrograms/

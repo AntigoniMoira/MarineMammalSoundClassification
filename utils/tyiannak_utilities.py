@@ -143,6 +143,7 @@ def plotly_classification_results(cm, class_names, file_path):
                                                       "Performance measures"])
     figs.append_trace(heatmap, 1, 1); figs.append_trace(b1, 1, 2)
     figs.append_trace(b2, 1, 2); figs.append_trace(b3, 1, 2)
+    figs.show()
     plotly.offline.plot(figs, filename=file_path, auto_open=True)
 
 def svm_train_evaluate_regression(X, y, k_folds, C=1):
