@@ -18,15 +18,16 @@ The dataset selected is the **Best of Watkins Marine Mammal Sound Database**[^1]
 
 The implementation plan consists of the following steps:
 
-1. Collection of data and metadata [`scraper.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/scraper.ipynb)
-2. Exploratory data analysis [`EDA-v1.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/EDA-v1.ipynb)
-3. Data Preprocessing (Cleaning and Splitting) [`data_preprocessing.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/data_preprocessing.ipynb)
-4. Handcrafted Features and SVM as baseline for comparison [`baseline_svm.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/baseline_svm.ipynb)
-5. Handcrafted Features and Fully Connected Neural Network [`FullyConnected_NN.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/FullyConnected_NN.ipynb)
-6. Melgrams/Spectrograms and CNNs [`CNN.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/CNN.ipynb)
-7. Transfer learning
-8. RNNs/LSTMs [`LSTM.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/LSTM.ipynb)
-9. Audio Transformer
+1. Collection of data and metadata [`1_Scraper.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/1_Scraper.ipynb)
+2. Exploratory data analysis before data preprocesssing [`2_EDA-v1.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/2_EDA-v1.ipynb)
+3. Data Preprocessing (Cleaning and Splitting) [`3_DataPreprocessing.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/3_DataPreprocessing.ipynb)
+4. Exploratory data analysis after data preprocesssing [`4_EDA-v2.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/4_EDA-v2.ipynb)
+5. Handcrafted Features and SVM as baseline for comparison [`5_BaselineSVM.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/5_BaselineSVM.ipynb)
+6. Handcrafted Features and Fully Connected Neural Network [`6_FullyConnectedNN.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/6_FullyConnectedNN.ipynb)
+7. Melgrams/Spectrograms and CNNs [`7_CNN.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/7_CNN.ipynb)
+8. RNNs/LSTMs [`8_LSTM.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/8_LSTM.ipynb)
+9. Audio Transformer [`9_Transformer.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/9_Transformer.ipynb)
+10. Transfer learning [`10_TransferLearning.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/10_TransferLearning.ipynb)
 
 ---
 
