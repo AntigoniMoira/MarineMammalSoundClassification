@@ -9,3 +9,6 @@ data_split/
 
 # ignore spectrograms folder because of its size
 spectrograms/
+
+# ignore models folder because of its size
+models/
