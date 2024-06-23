@@ -25,7 +25,7 @@ The implementation plan consists of the following steps:
 5. Handcrafted Features and Fully Connected Neural Network [`FullyConnected_NN.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/FullyConnected_NN.ipynb)
 6. Melgrams/Spectrograms and CNNs [`CNN.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/CNN.ipynb)
 7. Transfer learning
-8. RNNs/LSTMs
+8. RNNs/LSTMs [`LSTM.ipynb`](https://github.com/AntigoniMoira/MarineMammalSoundClassification/blob/main/LSTM.ipynb)
 9. Audio Transformer
 
 ---
