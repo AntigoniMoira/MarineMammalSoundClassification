@@ -10,6 +10,7 @@ import tensorflow as tf
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score
+from tensorflow.keras.applications import MobileNetV2
 
 
 def load_data(data_path, classes_path, normalization=False):
@@ -206,24 +207,6 @@ def create_LSTM_model(input_shape, num_classes):
     tensorflow.keras.Model: The compiled LSTM model.
     """
     
-    # model = models.Sequential()
-    # model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=input_shape))
-    # model.add(layers.MaxPooling2D((2, 2)))
-    # model.add(layers.Dropout(0.1))
-    
-    # model.add(layers.Conv2D(64, (3, 3), activation='relu'))
-    # model.add(layers.MaxPooling2D((2, 2)))
-    # model.add(layers.Dropout(0.1))
-    
-    # model.add(layers.Conv2D(128, (3, 3), activation='relu'))
-    # model.add(layers.MaxPooling2D((2, 2)))
-    # model.add(layers.Dropout(0.1))
-    
-    # model.add(layers.Flatten())
-    # model.add(tf.keras.layers.Reshape((-1, 128)))  # Reshape for LSTM layers
-    
-    # model.add(layers.LSTM(128, return_sequences=True))
-    
     model = models.Sequential()
     model.add(layers.LSTM(128, input_shape=input_shape, return_sequences=True))
     model.add(layers.Dropout(0.1))
@@ -233,82 +216,30 @@ def create_LSTM_model(input_shape, num_classes):
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     return model
 
-def create_Transformer_model(input_shape, num_classes, num_heads=4, ff_dim=128):
+def create_TL_model(num_classes):
     """
-    Creates and compiles a Transformer model.
-
-    Parameters:
-    input_shape (tuple): Shape of the input data (sequence_length, feature_dimension).
-    num_classes (int): Number of output classes.
-    num_heads (int): Number of attention heads in the MultiHeadAttention layers. Default is 4.
-    ff_dim (int): Dimensionality of the feed-forward network. Default is 128.
-
+    Create and compile a convolutional neural network model using MobileNetV2 for transfer learning.
+    
+    Args:
+        num_classes (int): The number of classes for the classification task.
+        
     Returns:
-    tensorflow.keras.Model: The compiled Transformer model.
+        tensorflow.keras.Model: The compiled model ready for training.
+        
     """
-    inputs = layers.Input(shape=input_shape)
+    base_model = MobileNetV2(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+
+    model = models.Sequential([
+        base_model,
+        layers.Flatten(),
+        layers.Dense(1024, activation='relu'),
+        layers.Dropout(0.1),
+        layers.Dense(512, activation='relu'),
+        layers.Dense(num_classes, activation='softmax')
+    ])
     
-    # Positional encoding
-    position = tf.range(start=0, limit=input_shape[0], delta=1)
-    pos_encoding = tf.cast(tf.expand_dims(position, axis=0), dtype=tf.float32)
-    pos_encoding = layers.Embedding(input_dim=input_shape[0], output_dim=input_shape[1])(pos_encoding)
-    x = layers.Add()([inputs, pos_encoding])
-    
-    # Transformer block
-    for _ in range(4):
-        attn_output = layers.MultiHeadAttention(num_heads=num_heads, key_dim=ff_dim)(x, x)
-        attn_output = layers.LayerNormalization(epsilon=1e-6)(attn_output)
-        ffn_output = layers.Dense(ff_dim, activation='relu')(attn_output)
-        ffn_output = layers.Dropout(0.1)(ffn_output)
-        x = layers.LayerNormalization(epsilon=1e-6)(ffn_output)
-    
-    # Classification head
-    x = layers.GlobalAveragePooling1D()(x)
-    x = layers.Dense(128, activation='relu')(x)
-    x = layers.Dropout(0.5)(x)
-    outputs = layers.Dense(num_classes, activation='softmax')(x)
-    
-    model = models.Model(inputs, outputs)
+    for layer in base_model.layers:
+        layer.trainable = False
+
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     return model
-
-# def create_Transformer_model(input_shape, num_classes, num_heads=4, ff_dim=128):
-#     """
-#     Creates and compiles a Transformer model.
-
-#     Parameters:
-#     input_shape (tuple): Shape of the input data (sequence_length, feature_dimension).
-#     num_classes (int): Number of output classes.
-#     num_heads (int): Number of attention heads in the MultiHeadAttention layers. Default is 4.
-#     """
-
-#     from keras_multi_head import MultiHeadAttention
-
-#     inputs = keras.Input(shape=input_shape)
-#     # Encoder
-#     x = layers.LayerNormalization(epsilon=1e-6)(inputs)
-#     x = MultiHeadAttention(num_heads=num_heads, key_dim=input_shape[1])(x, x)
-#     x1 = layers.Add()([inputs, x])  # First skip connection
-#     x = layers.LayerNormalization(epsilon=1e-6)(x1)
-#     x = layers.Conv1D(filters=ff_dim, kernel_size=1, activation="relu")(x)
-#     x = layers.Conv1D(filters=input_shape[1], kernel_size=1)(x)
-#     x2 = layers.Add()([x1, x])  # Second skip connection
-
-#     # Output
-#     x = layers.GlobalAveragePooling1D()(x2)
-#     x = layers.Dropout(0.1)(x)
-#     outputs = layers.Dense(num_classes, activation="softmax")(x)
-
-#     # Print shapes for debugging
-#     print("Shape of inputs:", inputs.shape)
-#     print("Shape of x1:", x1.shape)
-#     print("Shape of x2:", x2.shape)
-#     print("Shape of x after GlobalAveragePooling1D:", x.shape)
-
-#     model = keras.Model(inputs=inputs, outputs=outputs)
-#     model.compile(
-#         loss="categorical_crossentropy",
-#         optimizer="adam",
-#         metrics=["accuracy"]
-#     )
-#     return model
