@@ -66,11 +66,8 @@ Multiple machine learning and deep learning models were trained and evaluated on
 | **Long Short-Term Memory (LSTM)**   | **82.6%**  | **82.1%**  |
 | **MobileNetV2 (Transfer Learning)** | 82.0%      | 80.0%      |
 
-> 🏆 **The best overall performance was achieved using an LSTM-based architecture.**
-
-### 📐 LSTM Model Architecture
-
-1. **LSTM Layer**: 128 units — processes sequences and returns full sequences.
+> 🏆 **The best overall performance was achieved using an LSTM-based architecture:**
+> 1. **LSTM Layer**: 128 units — processes sequences and returns full sequences.
 2. **Dropout Layer**: 10% dropout rate to reduce overfitting.
 3. **LSTM Layer**: 128 units — processes output of the first LSTM.
 4. **Dropout Layer**: 10% dropout rate.
