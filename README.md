@@ -68,11 +68,11 @@ Multiple machine learning and deep learning models were trained and evaluated on
 
 > 🏆 **The best overall performance was achieved using an LSTM-based architecture:**
 > 1. **LSTM Layer**: 128 units — processes sequences and returns full sequences.
-2. **Dropout Layer**: 10% dropout rate to reduce overfitting.
-3. **LSTM Layer**: 128 units — processes output of the first LSTM.
-4. **Dropout Layer**: 10% dropout rate.
-5. **Dense Output Layer**: Softmax activation over `num_classes` categories.
-6. **Compilation**: Optimized with Adam, using categorical cross-entropy loss and accuracy as the evaluation metric.
+> 2. **Dropout Layer**: 10% dropout rate to reduce overfitting.
+> 3. **LSTM Layer**: 128 units — processes output of the first LSTM.
+> 4. **Dropout Layer**: 10% dropout rate.
+> 5. **Dense Output Layer**: Softmax activation over `num_classes` categories.
+> 6. **Compilation**: Optimized with Adam, using categorical cross-entropy loss and accuracy as the evaluation metric.
 
 ### 📊 Visual Results
 
